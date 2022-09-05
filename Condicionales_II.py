@@ -29,7 +29,7 @@ pisniv2=18500
 if 0 in comprar or comprar==[]:
     print("Numero incorrecto, especifica un numero entre 1-5")    #Si hay un numero incorrecto o no introduces un numero, te manda un mensaje de error
 
-if 1 in comprar:                                                  #Si el numero 1 esta en la lista, al dinero inicial se le resta el valor del primer articulo
+if 1 in comprar:                                                  #Si el numero 1 esta en la lista, al dinero inicial se le resta el valor del primer articulo.
     dinero=dinero - espadaniv1
 
 if 2 in comprar:
