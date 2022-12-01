@@ -11,7 +11,7 @@ class Graph:
             self.adjList[dest].append(src)
  
  
-# Función para realizar un recorrido DFS en el graph en un graph
+# FunciÃ³n para realizar un recorrido DFS en el graph en un graph
 def DFS(graph, v, discovered):
  
     discovered[v] = True            # marca el nodo actual como descubierto
@@ -19,26 +19,26 @@ def DFS(graph, v, discovered):
  
     # do para cada arista (v, u)
     for u in graph.adjList[v]:
-        if not discovered[u]:       # si `u` aún no se descubre
+        if not discovered[u]:       # si `u` aÃºn no se descubre
             DFS(graph, u, discovered)
  
  
 if __name__ == '__main__':
  
-    # Lista de bordes de graph según el diagrama anterior
+    # Lista de bordes de graph segÃºn el diagrama anterior
     edges = [
-        # Observe que el nodo 0 está desconectado
+        # Observe que el nodo 0 estÃ¡ desconectado
         (1, 2), (1, 7), (1, 8), (2, 3), (2, 6), (3, 4),
         (3, 5), (8, 9), (8, 12), (9, 10), (9, 11)
     ]
  
-    # número total de nodos en el graph (etiquetados de 0 a 12)
+    # nÃºmero total de nodos en el graph (etiquetados de 0 a 12)
     n = 13
  
     # construye un graph a partir de los bordes dados
     graph = Graph(edges, n)
  
-    # para realizar un seguimiento de si se descubre un vértice o no
+    # para realizar un seguimiento de si se descubre un vÃ©rtice o no
     discovered = [False] * n
  
     # Realizar recorrido DFS de todos los nodos no descubiertos a
