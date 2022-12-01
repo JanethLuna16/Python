@@ -28,7 +28,7 @@ class Graph:
         closed_lst = set([])
 
         # poo has present distances from start to all other nodes
-        # the default value is +infinity
+      
         poo = {}
         poo[start] = 0
 
